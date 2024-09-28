@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="skillswap.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Skill Swap</title>
+    <!-- Include any additional CSS required for swipeable cards -->
+    <link rel="stylesheet" href="path/to/cards.css"> <!-- Add your custom styles or from CodePen -->
+</head>
+<body>
+    <header class="page-header">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="skillswap.html">Skill Swap</a>
+            <a href="connect.html">Connect</a>
+            <a href="index.html">Sign Out</a>
+            <div class="">
+                <img alt="Logo" src="logo.png">
+            </div>
+        </div>
+    </header>
+    <h1>Skill Swap</h1>
+    <h2>Connect with peers, share skills, and grow together!</h2>
+    <div class="skill-swap-calendar">
+        <h3>Your Skill Swap Calendar</h3>
+        <div class="calendar-content">
+            <p>Upcoming workshops and mentorship events will appear here.</p>
+            <!-- integrate google calendar -->
+            <div class="calendar-widget">
+                <!-- calendar -->
+            </div>
+        </div>
+    </div>
+
+    <div class="questionnaire-button">
+        <h3>Join our Skill Swap Questionnaire!</h3>
+        <a href="questionnaire.html">
+            <button type="button">Take the Questionnaire</button>
+        </a>
+    </div>
+
+    <!-- Swipeable Cards Section -->
+    <div class="card-container">
+        <h3>Swipe and Connect Based on Skills</h3>
+        <div class="card-stack">
+            <!-- Card 1 -->
+            <div class="card" data-skill="Learn: Python | Teach: HTML">
+                <h4>John Doe</h4>
+                <p>Wants to learn: Python</p>
+                <p>Can teach: HTML</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card" data-skill="Learn: JavaScript | Teach: CSS">
+                <h4>Jane Smith</h4>
+                <p>Wants to learn: JavaScript</p>
+                <p>Can teach: CSS</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <!-- Include JavaScript libraries for swipe functionality -->
+    <script src="path/to/swipe-cards.js"></script> <!-- Add your custom JS or from CodePen -->
+    <script>
+        // JavaScript logic for swipe functionality
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('swipeleft', () => {
+                // Handle left swipe (reject)
+                card.classList.add('swipe-left');
+            });
+
+            card.addEventListener('swiperight', () => {
+                // Handle right swipe (accept)
+                card.classList.add('swipe-right');
+            });
+        });
+    </script>
+</body>
+</html>
