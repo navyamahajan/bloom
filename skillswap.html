@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="skill_swap_styles.css">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <title>Skill Swap</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="skill_swap.html">Skill Swap</a>
+        <a href="connect.html">Connect</a>
+        <div class="company-name">
+            <img alt="Logo" src="logo.png">
+        </div>
+    </div>
+
+    <h1>Skill Swap</h1>
+
+    <h2>Connect with peers, share skills, and grow together!</h2>
+
+    <div class="questionnaire-banner">
+        <h3>Skill Swap - July Match Questionnaire</h3>
+        <!-- speech to text integration -->
+         <!-- https://www.w3schools.com/tags/att_form_method.asp -->
+        <form action="submit_form.php" method="POST">
+            <!-- learn skills -->
+            <label for="learn-skills">Type skills you're interested in learning:</label><br>
+            <input type="text" id="learn-skills" name="learn_skills" placeholder="E.g., Python, Graphic Design, Public Speaking" required><br><br>
+    
+            <!-- teach skills -->
+            <label for="teach-skills">Type skills you're interested in teaching:</label><br>
+            <input type="text" id="teach-skills" name="teach_skills" placeholder="E.g., Web Development, Writing, Marketing" required><br><br>
+    
+            <!-- rematch -->
+            <label>Would you like to rematch with your current match?</label><br>
+            <input type="radio" id="rematch-yes" name="rematch" value="yes" required>
+            <label for="rematch-yes">Yes</label><br>
+            <input type="radio" id="rematch-no" name="rematch" value="no" required>
+            <label for="rematch-no">No</label><br><br>
+            <!-- diff skill -->
+            <label>If we can't match you with someone teaching the skills you want to learn, would you like to be matched for a different skill?</label><br>
+            <input type="radio" id="different-skill-yes" name="different_skill_match" value="yes" required>
+            <label for="different-skill-yes">Yes</label><br>
+            <input type="radio" id="different-skill-no" name="different_skill_match" value="no" required>
+            <label for="different-skill-no">No</label><br><br>
+            <!-- submit -->
+            <button type="submit">Submit Questionnaire</button>
+        </form>
+    </div>
+
+    <div class="skill-swap-calendar">
+        <h3>Your Skill Swap Calendar</h3>
+        <div class="calendar-content">
+            <p>Upcoming workshops and mentorship events will appear here.</p>
+        </div>
+    </div>
+
+</body>
+</html>
