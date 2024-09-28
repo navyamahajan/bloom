@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: #FFB6C1;
+    background-color: #fdd6dc;
 }
 
 .page-header {
-    background-color: #FFB6C1;
+    background-color: #fdd6dc;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -68,8 +68,6 @@ body {
     max-width: 600px;
     text-align: left;
 }
-
-
 
 .about_container {
     padding: 50px 10%;
