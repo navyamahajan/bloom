@@ -9,18 +9,18 @@
 </head>
 <body>
 
-
     <header class="page-header">
         <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="skillswap.html">Skill Swap</a>
-  <a href="connect.html">Connect</a>
-  <a href="index.html">Sign Out</a>
-    </div>
-</div>
+            <div class="">
+                <img alt="Logo" src="logo.png">
+            </div>
+            <a class="active" href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="skillswap.html">Skill Swap</a>
+            <a href="connect.html">Connect</a>
+            <a href="signin.html">Sign In</a>
+        </div>
     </header>
-
 
    <main>
        <section>
@@ -28,9 +28,9 @@
            <p>Enhance your career by building a women+ tech network on Bloom.</p>
        </section>
    </main>
-       <section class="events"></section>
-           <h2>Your Upcoming Events</h2>
-           <div class="events-container">
+   <section class="events">
+       <h2>Your Upcoming Events</h2>
+       <div class="events-container">
             <!-- calendar -->
             <div class="calendar">
                 <h3>Event Calendar</h3>
@@ -53,19 +53,18 @@
                     <li><input type="checkbox"> Finish Java project</li>
                     <li><input type="checkbox"> Set up AWS for Skill Swap</li>
                 </ul>
-            <!-- to-do -->
+                <!-- to-do -->
                 <h4>Add To-Do Item</h4>
-                   <label for="todo-task">Task Title:</label>
-                   <input type="text" id="todo-task" placeholder="Enter task title"><br>
-                   <button id="add-todo-btn">Add To-Do</button>
+                <label for="todo-task">Task Title:</label>
+                <input type="text" id="todo-task" placeholder="Enter task title"><br>
+                <button id="add-todo-btn">Add To-Do</button>
             </div>
-        </div>
-    </section>
+       </div>
+   </section>
 
-       </section>
-       <section class="profiles">
-           <h2>Profiles You Might Like</h2>
-           <div class="profiles-container">
+   <section class="profiles">
+       <h2>Profiles You Might Like</h2>
+       <div class="profiles-container">
             <div class="profile-card">
                 <img src="https://placeimg.com/100/100/people" alt="Profile Image">
                 <h3>Navya Mahajan</h3>
@@ -89,8 +88,9 @@
                 <p><strong>Looking to Learn:</strong> Video Editing, AWS</p>
                 <button>Connect</button>
             </div>
-       </section>
-   </main>
+       </div>
+   </section>
+
    <script src="dashboard.js"></script>
 </body>
 </html>
