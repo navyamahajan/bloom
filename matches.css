@@ -1,0 +1,84 @@
+/* ... (keep your existing CSS) ... */
+
+.potential-matches {
+    background-color: #FFB6C1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.potential-matches h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#view-matches-btn {
+    background-color: white;
+    color: #FFB6C1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#match-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.match-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.match-card h3 {
+    color: #E75480;
+    margin-bottom: 10px;
+}
+
+.match-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.match-details h4 {
+    color: #E75480;
+    margin-bottom: 5px;
+}
+
+.swipe-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.swipe-buttons button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.swipe-buttons button:hover {
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}

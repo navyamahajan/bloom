@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="skillswap.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Potential Matches</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="skillswap.html">Skill Swap</a>
+  <a href="connect.html">Connect</a>
+  <a href="index.html">Sign Out</a>
+    <div class = "">
+        <img alt = "Logo" src = "logo.png">
+    </div>
+</div>
+    </header>
+    <main>
+        <section class="potential-matches">
+            <h2>View Potential Matches</h2>
+            <button id="view-matches-btn">Swipe to match!</button>
+        </section>
+
+        <section class="skill-swap-calendar">
+            <h3>YOUR SKILL SWAP CALENDAR</h3>
+            <iframe src="https://calendar.google.com/calendar/embed?src=d11f90dcdfc7b318936f206bb24ff04131048cc1fe485e2b89c13760a6e40f32%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <p>Upcoming workshops and mentorship events will appear here.</p>
+        </section>
+
+        <div id="match-popup" class="hidden">
+            <div class="match-card">
+                <h3 id="match-name">Camila Avalos</h3>
+                <p id="match-status">Currently I'm studying computer science at the University of Toronto</p>
+                <div class="match-details">
+                    <h4>Skills I can teach:</h4>
+                    <p id="skills-teach"></p>
+                    <h4>Skills I'd like to learn:</h4>
+                    <p id="skills-learn"></p>
+                    <h4>Hobbies:</h4>
+                    <p id="hobbies"></p>
+                </div>
+                <div class="swipe-buttons">
+                    <button id="swipe-left">👎</button>
+                    <button id="swipe-right">❤️</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="skillswap.js"></script>
+</body>
+</html>
