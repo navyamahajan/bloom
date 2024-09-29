@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="questionnaire.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Échange de Compétences - Questionnaire</title>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="topnav">
+            <a href="index.html">Accueil</a>
+            <a href="dashboard.html">Tableau de bord</a>
+            <a href="skillswap.html">Échange de Compétences</a>
+            <a href="connect.html">Connecter</a>
+            <a href="index.html">Déconnexion</a>
+        </div>
+    </header>
+
+    <h1>Échange de Compétences - Questionnaire</h1>
+    <h2>Aidez-nous à vous jumeler avec les meilleures compétences !</h2>
+
+    <div class="questionnaire-banner">
+        <button class="close-button">X</button> 
+        <h3>Échange de Compétences - Questionnaire de Match de Juillet</h3>
+        <p class="note">Remarque : Vous pouvez modifier vos réponses jusqu'à la date limite et vous pouvez vous retirer de l'échange de compétences de ce mois-ci en supprimant votre candidature.</p>
+        
+        <!-- language switch button -->
+        <a href="questionnaire.html" class="language-switch">English</a>
+
+        <form action="submit_form.php" method="POST">
+            <!-- learn skills -->
+            <label for="learn-skills">Indiquez les compétences que vous souhaitez apprendre :</label><br>
+            <input type="text" id="learn-skills" name="learn_skills" placeholder="Par ex. : Python, Design Graphique, Prise de Parole en Public" required><br><br>
+    
+            <!-- teach skills -->
+            <label for="teach-skills">Indiquez les compétences que vous souhaitez enseigner :</label><br>
+            <input type="text" id="teach-skills" name="teach_skills" placeholder="Par ex. : Développement Web, Rédaction, Marketing" required><br><br>
+    
+            <!-- rematch -->
+            <label>Souhaitez-vous être jumelé à votre match actuel ?</label><br>
+            <input type="radio" id="rematch-yes" name="rematch" value="yes" required>
+            <label for="rematch-yes">Oui</label><br>
+            <input type="radio" id="rematch-no" name="rematch" value="no" required>
+            <label for="rematch-no">Non</label><br><br>
+            
+            <!-- diff skill -->
+            <label>Si nous ne pouvons pas vous jumeler avec quelqu'un enseignant les compétences que vous souhaitez apprendre, souhaitez-vous être jumelé à une compétence différente ?</label><br>
+            <input type="radio" id="different-skill-yes" name="different_skill_match" value="yes" required>
+            <label for="different-skill-yes">Oui</label><br>
+            <input type="radio" id="different-skill-no" name="different_skill_match" value="no" required>
+            <label for="different-skill-no">Non</label><br><br>
+            
+            <!-- submit -->
+            <button type="submit">Soumettre le Questionnaire</button>
+        </form>
+    </div>
+    <script src="questionnaire.js"></script>
+</body>
+</html>

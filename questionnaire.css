@@ -40,8 +40,9 @@ h1, h2 {
 
 h3 {
     color: #E75480;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 0;
+    text-align: center;
 }
 
 .close-button {
@@ -57,7 +58,29 @@ h3 {
     font-size: 18px;
     cursor: pointer;
 }
+.language-switch {
+    background-color: #E75480;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    text-decoration: none; /* Ensures it looks like a button */
+    transition: background-color 0.3s;
+}
 
+.language-switch:hover {
+    background-color: #fdd6dc;
+    color: #E75480;
+}
+
+.language-switch:focus {
+    outline: none;
+}
 form {
     display: flex;
     flex-direction: column;
