@@ -1,28 +1,28 @@
+/* General styling */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFC0CB;
+    background-color: #fdd6dc;
     margin: 0;
     padding: 0;
 }
 
 .page-header {
-    background-color: #E75480;
+    background-color: #e35a85;
     padding: 10px 0;
 }
 
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.topnav a {
+.page-header .topnav a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
 }
 
+.page-header .topnav a:hover {
+    background-color: #fdd6dc;
+    color: white;
+}
 .questionnaire-banner {
     background-color: white;
     border-radius: 20px;
