@@ -1,153 +1,172 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #fdd6dc;
+	background-color: #fdd6dc;
+}
+
+.page-header {
+	background-color: #fdd6dc;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
 }
 
 .topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
 }
 
 .topnav img {
-    height: 30px;
+	height: 30px;
 }
 
 .topnav a {
-    color: #e35a85; 
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
+	color: #e35a85;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 16px;
 }
 
 .topnav a:last-child {
-    background-color: #e35a85;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
+	background-color: #e35a85;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 20px;
 }
 
 main {
-    padding: 20px;
+	padding: 20px;
 }
 
 h1 {
-    color: #E75480;
-    font-size: 50px;
-    margin-bottom: 10px;
+	color: #E75480;
+	font-size: 50px;
+	margin-bottom: 10px;
 }
 
-.events, .profiles {
-    background-color: #FFF0F5;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+.events,
+.profiles {
+	background-color: #FFF0F5;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 h2 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 0px 20px;
+	color: #333;
+	font-size: 20px;
+	margin-bottom: 15px;
+	padding: 0px 20px;
 }
 
 .events-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
 }
 
-.calendar, .checklist {
-    width: 47%;
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.calendar,
+.checklist {
+	width: 47%;
+	background-color: white;
+	border-radius: 8px;
+	padding: 15px 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.calendar h3, .checklist h3 {
-    color: #E75480;
-    font-size: 18px;
-    margin-bottom: 10px;
+.calendar h3,
+.checklist h3 {
+	color: #E75480;
+	font-size: 18px;
+	margin-bottom: 10px;
 }
 
-.calendar ul, .checklist ul {
-    list-style-type: none;
-    padding: 0;
+.calendar ul,
+.checklist ul {
+	list-style-type: none;
+	padding: 0;
 }
 
-.calendar li, .checklist li {
-    margin-bottom: 10px;
+.calendar li,
+.checklist li {
+	margin-bottom: 10px;
 }
 
-input[type="date"], input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+input[type="date"],
+input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
 
 button {
-    background-color: #E75480;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #E75480;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 button:hover {
-    background-color: #D64D7A;
+	background-color: #D64D7A;
 }
 
 /* Profiles */
 .profiles-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .profile-card {
-    width: 30%;
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	width: 30%;
+	background-color: white;
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 10px;
 }
 
 .profile-card h3 {
-    color: #E75480;
-    font-size: 18px;
-    margin-bottom: 5px;
+	color: #E75480;
+	font-size: 18px;
+	margin-bottom: 5px;
 }
 
 .profile-card p {
-    margin: 5px 0;
+	margin: 5px 0;
 }
 
 @media (max-width: 768px) {
-    .events-container, .profiles-container {
-        flex-direction: column;
-    }
 
-    .calendar, .checklist, .profile-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+	.events-container,
+	.profiles-container {
+		flex-direction: column;
+	}
+
+	.calendar,
+	.checklist,
+	.profile-card {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
