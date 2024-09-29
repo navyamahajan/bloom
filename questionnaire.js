@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     if (form) { 
         form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
             const formData = new FormData(form);
             const learnSkills = formData.get("learn_skills");
             const teachSkills = formData.get("teach_skills");
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Rematch:", rematch);
             console.log("Different Skill Match:", differentSkillMatch);
 
+            // Redirect to the matches screen page
             window.location.href = "matches-screen.html"; 
         });
     }
