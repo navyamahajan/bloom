@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF0F5;
+    color: #333;
+}
+
+/* Header styles */
+.page-header {
+    background-color: #FF69B4;
+    padding: 15px 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.connect-banner {
+    background-color: #FFB6C1;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connect-banner h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.connect-banner h2 {
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.flower-icon {
+    width: 150px;
+    height: 150px;
+    background-color: #FF69B4;
+    border-radius: 50% 0 50% 50%;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.profiles-you-might-like, .find-people-near-you {
+    flex: 1;
+    background-color: #FF69B4;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #FFB6C1;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-details {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

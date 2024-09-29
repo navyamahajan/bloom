@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="skill_swap_styles.css">
-    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <link rel="stylesheet" href="questionnaire.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Skill Swap - Questionnaire</title>
 </head>
 <body>
@@ -26,9 +26,11 @@
     <h2>Help us match you with the best skills!</h2>
 
     <div class="questionnaire-banner">
+        <button class="close-button">X</button>
         <h3>Skill Swap - July Match Questionnaire</h3>
         <!-- speech to text integration -->
          <!-- https://www.w3schools.com/tags/att_form_method.asp -->
+         <p class="note">Note: You can edit your answers up until the deadline and you can withdraw yourself from this month's skill swap by deleting your application</p>
         <form action="submit_form.php" method="POST">
             <!-- learn skills -->
             <label for="learn-skills">Type skills you're interested in learning:</label><br>
@@ -55,6 +57,6 @@
             <button type="submit">Submit Questionnaire</button>
         </form>
     </div>
-
+    <script src="questionnaire.js"></script>
 </body>
 </html>
