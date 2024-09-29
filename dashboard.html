@@ -32,9 +32,60 @@
    </main>
        <section class="events"></section>
            <h2>Your Upcoming Events</h2>
+           <div class="events-container">
+            <!-- calendar -->
+            <div class="calendar">
+                <h3>Event Calendar</h3>
+                <ul>
+                    <li><strong>October 5:</strong> Tech Conference</li>
+                    <li><strong>October 12:</strong> Coding Workshop</li>
+                    <li><strong>October 19:</strong> Networking Event</li>
+                </ul>
+                <label for="event-date">Due Date:</label>
+                <input type="date" id="event-date"><br>
+                <label for="event-title">Task Title:</label>
+                <input type="text" id="event-title" placeholder="Enter task title"><br>
+                <button id="add-event-btn">Add Event</button>
+            </div>
+            <!-- checklist -->
+            <div class="checklist">
+                <h3>To-Do List</h3>
+                <ul>
+                    <li><input type="checkbox"> Prepare for Tech Conference</li>
+                    <li><input type="checkbox"> Finish Java project</li>
+                    <li><input type="checkbox"> Set up AWS for Skill Swap</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
        </section>
        <section class="profiles">
            <h2>Profiles You Might Like</h2>
+           <div class="profiles-container">
+            <div class="profile-card">
+                <img src="https://placeimg.com/100/100/people" alt="Profile Image">
+                <h3>Navya Mahajan</h3>
+                <p><strong>Skills:</strong> Java, Web Development</p>
+                <p><strong>Looking to Learn:</strong> AWS, Scala</p>
+                <button>Connect</button>
+            </div>
+
+            <div class="profile-card">
+                <img src="https://placeimg.com/100/100/people" alt="Profile Image">
+                <h3>Lily Li</h3>
+                <p><strong>Skills:</strong> Photography, Photoshop</p>
+                <p><strong>Looking to Learn:</strong> Video Editing, Public Speaking</p>
+                <button>Connect</button>
+            </div>
+
+            <div class="profile-card">
+                <img src="https://placeimg.com/100/100/people" alt="Profile Image">
+                <h3>Anwesha Bali</h3>
+                <p><strong>Skills:</strong> HTML, CSS</p>
+                <p><strong>Looking to Learn:</strong> Video Editing, AWS</p>
+                <button>Connect</button>
+            </div>
        </section>
    </main>
 </body>
