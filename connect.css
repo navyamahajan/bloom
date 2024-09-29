@@ -67,12 +67,14 @@ body {
     gap: 30px;
 }
 
+/* Profile section styles */
 .profiles-you-might-like, .find-people-near-you {
     flex: 1;
     background-color: #e35a85;
     border-radius: 10px;
     padding: 20px;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
 
 h3 {
@@ -86,6 +88,8 @@ h3 {
     padding: 15px;
     margin-bottom: 15px;
     color: #333;
+    display: flex;
+    align-items: center; /* Align profile items */
 }
 
 .profile-pic {
@@ -97,8 +101,7 @@ h3 {
 }
 
 .profile-info {
-    display: flex;
-    align-items: center;
+    flex-grow: 1; /* Allow info to grow */
 }
 
 .profile-name {
@@ -114,5 +117,14 @@ h3 {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+
+    .connect-banner {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .flower-icon {
+        margin-top: 20px; /* Add margin on smaller screens */
     }
 }

@@ -28,6 +28,22 @@ main {
 	padding: 20px;
 }
 
+h1 {
+    font-size: 36px;
+    color: #e35a85; 
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px; 
+    color: #333; 
+    text-align: center; 
+    margin: 10px 0; 
+    font-weight: normal; 
+    line-height: 1.4; 
+}
+
 .questionnaire-banner {
 	background-color: #FFB6C1;
 	border-radius: 10px;
@@ -54,25 +70,25 @@ main {
 	display: inline-block;
 }
 
-.questionnaire-icon,
 .questionnaire-arrow {
-	background-color: white;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #FFB6C1;
-	font-weight: bold;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 24px; 
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.questionnaire-flower {
-	width: 100px;
-	height: 100px;
-	background-color: #FFC0CB;
-	border-radius: 50% 50% 0 50%;
-	transform: rotate(45deg);
+.questionnaire-arrow:hover {
+    background-color: #FFC0CB;
+    transform: scale(1.1); 
 }
 
 .skill-swap-calendar {
