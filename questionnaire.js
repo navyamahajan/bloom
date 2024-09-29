@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Teach Skills:", teachSkills);
         console.log("Rematch:", rematch);
         console.log("Different Skill Match:", differentSkillMatch);
-        window.location.href = "matches.html";
+        window.location.href = "matches-screen.html";
     });
 });

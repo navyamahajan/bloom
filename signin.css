@@ -1,100 +1,166 @@
-* {
-    box-sizing: border-box;
+/* General styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdd6dc;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-color: #fdd6dc;
 }
 
 .page-header {
-    background-color: #fdd6dc;
+    background-color: #e35a85;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.topnav img {
-    height: 30px;
-}
-
-.topnav a {
-    color: #e35a85; 
+.page-header .topnav a {
+    color: white;
     text-decoration: none;
-    margin-left: 20px;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.page-header .topnav a:hover {
+    background-color: #fdd6dc;
+    color: white;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    color: #444;
+}
+
+/* Form styling */
+.form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.line {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #FF69B4; /* Pink Bloom color */
+    margin: 0 auto 20px auto;
+}
+
+/* Input fields */
+.field {
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
 }
 
-.topnav a:last-child {
-    background-color: #e35a85;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
+.input input:focus {
+    outline: none;
+    border-color: #FF69B4; /* Pink Bloom color */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
 }
 
-.main {
-    background-color: #e35a85; 
+/* Forgot password link */
+.forg a {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+.forg a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.field.btn a {
+    text-decoration: none;
+    background-color: #FF69B4;
     color: white;
-    min-height: 100vh;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.field.btn a:hover {
+    background-color: #e65c9f;
+}
+
+/* Sign up link */
+.link.sign-login {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link.sign-login span {
+    color: #333;
+    font-size: 14px;
+}
+
+.link.sign-login a {
+    color: #FF69B4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link.sign-login a:hover {
+    text-decoration: underline;
+}
+
+/* Third-party login options */
+.thirdLogin {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 30px 10% 0;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.main-content {
-    max-width: 1000px;
+.google {
+    background-color: #db4437;
+    color: white;
 }
 
-.main h1 {
-    font-size: 90px;
-    margin-bottom: 18px;
-    text-align: left;
+.google:hover {
+    background-color: #c0362c;
 }
 
-.main p {
+.face-icon {
     font-size: 24px;
-    max-width: 600px;
-    text-align: left;
-}
-
-.about_container {
-    padding: 50px 10%;
-    text-align: left;
-}
-
-.about_container h1 {
-    color: #e35a85;
-    margin-bottom: 20px;
-    font-size: 48px;
-}
-
-@media (max-width: 768px) {
-    .topnav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .topnav a {
-        margin: 10px 0;
-    }
-    
-    .main h1 {
-        font-size: 48px;
-    }
-    
-    .main p {
-        font-size: 18px;
-    }
+    margin-right: 10px;
 }
